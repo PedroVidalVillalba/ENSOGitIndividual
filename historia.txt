@@ -14,5 +14,15 @@ git add Procesos/ControlDeCambios/DP_ControldeCambios_Grupo2.docx           # Ac
 git add historia.txt    # Actualizamos el documento con la historia de comandos
 git status              # Comprobamos que están en la stagin area todos los archivos para el commit
 git commit              # Confirmamos los cambios al repositorio local
+git switch main         # Nos movemos de vuelta a la rama main
+git merge Mejoras       # Fundimos la rama Mejoras en la rama main
+git log                 # Comprobamos que el merge se realizó correctamente 
+git branch -d Mejoras   # Borramos la rama Mejoras
+git branch              # Listamos las ramas para confirmar que la rama Mejoras se eliminó
+git rm Procesos/ControlDeCambios/DP_ControldeCambios_Grupo2-v1_1.pdf        # Borramos del control de cambios el pdf con las propuestas de mejora, para que solo quede la versión correcta del documento de gestión de cambios y las plantillas
+git add historia.txt    # Actualizamos el documento de historial de comandos
+git status              # Verificamos que están los cambios que queremos hacer
+git commit              # Confirmamos los cambios en el repositorio local
+git tag -a R2           # Etiquetamos la versión actual con el tag R2
 
 
