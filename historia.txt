@@ -1,0 +1,6 @@
+git init                # Creamos el repositorio local vacío en la carpeta actual
+git add historia.txt    # Añadimos este fichero con el registro de comandos bajo el control de git
+git add Procesos/       # Añadimos el directorio Procesos (y todos los documentos que contiene) bajo el control de git 
+git status              # Comprobamos el estado de la stagin area
+git commit              # Confirmamos los cambios en el repositorio local (escribimos el mensaje de forma interactiva)
+
