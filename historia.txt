@@ -3,4 +3,16 @@ git add historia.txt    # Añadimos este fichero con el registro de comandos baj
 git add Procesos/       # Añadimos el directorio Procesos (y todos los documentos que contiene) bajo el control de git 
 git status              # Comprobamos el estado de la stagin area
 git commit              # Confirmamos los cambios en el repositorio local (escribimos el mensaje de forma interactiva)
+git log                 # Comprobamos que el commit se realizó correctamente
+git tag -a R1           # Creamos un tag anotado como versión R1 en el commit actual (en el que se encuentra HEAD)
+git log                 # Comprobamos que el commit quedó anotado correctamente
+git branch Mejoras      # Creamos una rama "Mejoras"
+git switch Mejoras      # Nos movemos a la rama "Mejoras"
+git status              # Vemos los archivos que quedan por añadir al control de versiones, una vez añadido el pdf con las propuestas de mejora 
+git add Procesos/ControlDeCambios/DP_ControldeCambios_Grupo2-v1_1.pdf       # Añadimos el pdf con las propuestas de mejora
+git add Procesos/ControlDeCambios/DP_ControldeCambios_Grupo2.docx           # Actualizamos el documento de control de cambios a la versión 2
+git add historia.txt    # Actualizamos el documento con la historia de comandos
+git status              # Comprobamos que están en la stagin area todos los archivos para el commit
+git commit              # Confirmamos los cambios al repositorio local
+
 
