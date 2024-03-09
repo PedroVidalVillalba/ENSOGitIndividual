@@ -24,5 +24,19 @@ git add historia.txt    # Actualizamos el documento de historial de comandos
 git status              # Verificamos que están los cambios que queremos hacer
 git commit              # Confirmamos los cambios en el repositorio local
 git tag -a R2           # Etiquetamos la versión actual con el tag R2
+git log                 # Comprobamos que el commit actual quedó etiquetado con la versión R2
+git add Procesos/ControlDeCambios/DP_ControldeCambios_Grupo2.docx           # Actualizamos el documento de control de cambios a la versión 3 directamente sobre la rama principal
+git add historia.txt    # Actualizamos la historia de comandos
+git status              # Comprobamos que están los cambios que queremos rastrear
+git commit              # Confirmamos los cambios al repositorio local
+git reset R2            # Devolvemos la principal al estado anterior, estiquetada como R2
+git status              # Comprobamos los cambios que no están rastreados (Vemos que el documento de control de cambios está modificado a la versión 3, pero no rastreado)
+git log                 # Comprobamos que el HEAD está efectivamente en la versión etiquetada como R2
+git add Procesos/ControlDeCambios/      # Añadimos todos los documentos del directorio Procesos/ControlDeCambios/ para ser incluidos en el siguiente commit, lo que incluye tanto el documento de control de cambios como las plantillas modificadas
+git add historia.txt    # Actualizamos la historia de comandos
+git status              # Comprobamos que están rastreados los documentos correctos para el commit
+git commit              # Confirmamos los cambios para generar la versión 3
+git tag -a R3           # Etiquetamos la nueva versión con la etiqueta R3
+
 
 
