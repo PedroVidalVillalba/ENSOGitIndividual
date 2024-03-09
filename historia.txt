@@ -37,6 +37,18 @@ git add historia.txt    # Actualizamos la historia de comandos
 git status              # Comprobamos que están rastreados los documentos correctos para el commit
 git commit              # Confirmamos los cambios para generar la versión 3
 git tag -a R3           # Etiquetamos la nueva versión con la etiqueta R3
+git log                 # Comprobamos que el commit se realizó correctamente y se añadió el tag correcto
+gh repo create          # Crear mediante el CLI de GitHub un repositorio remoto de forma interactiva desde la terminal (el usuario de GitHub ya estaba previamente configurado)
+git push --tags         # Subir la rama principal (la actual) y los tags al repositorio de GitHub (al usar el CLI, ya queda configurado y no hay que especificar a dónde hacer el push)
+git pull                # Comprobamos si hubo cambios en el repositorio remoto, y los descargamos si así fuese para asegurarnos de que la rama principal está actualizada
+git status              # Comprobamos qué documentos no están actualizados (vemos que historia.txt no lo está por los comandos que acabamos de añadir)
+git diff historia.txt   # Comprobamos las diferencias de este fichero respecto a la versión en el repositorio
+git add historia.txt    # Añadimos los cambios en historia.txt para que se rastreen en el siguiente commit
+git status              # Comprobamos que rastreamos todos los cambios que queremos rastrear
+git commit              # Confirmamos los cambios en el repositorio local
+git log                 # Comprobamos que la rama local está por delante de la remota (origin/main)
+git push                # Subimos los cambios al repositorio remoto en GitHub previamente configurado
+git log                 # Comprobamos que tanto el local como el remoto están actualizados al último commit
 
 
 
